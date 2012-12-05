@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  uid: MyString
+  customer: MyString
+  qty: 1
+  ship_qty: 1
+  workflow_state: MyString
+
+two:
+  uid: MyString
+  customer: MyString
+  qty: 1
+  ship_qty: 1
+  workflow_state: MyString

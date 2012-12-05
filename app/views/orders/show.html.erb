@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Uid:</b>
+  <%= @order.uid %>
+</p>
+
+<p>
+  <b>Customer:</b>
+  <%= @order.customer %>
+</p>
+
+<p>
+  <b>Qty:</b>
+  <%= @order.qty %>
+</p>
+
+<p>
+  <b>Ship qty:</b>
+  <%= @order.ship_qty %>
+</p>
+
+<p>
+  <b>Workflow state:</b>
+  <%= @order.state %>
+</p>
+
+<p>
+  <b>Set:</b>
+  <%= @order.set_id %>
+</p>
+
+<p>
+  <b>Worker:</b>
+  <%= @order.store_worker %>
+</p>
+
+
+<%= link_to 'Edit', edit_order_path(@order) %> |
+<%= link_to 'Back', orders_path %>

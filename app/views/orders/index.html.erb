@@ -1,0 +1,31 @@
+<h1>Listing orders</h1>
+
+<table>
+  <tr>
+    <th>Uid</th>
+    <th>Customer</th>
+    <th>Qty</th>
+    <th>Ship qty</th>
+    <th>Workflow state</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @orders.each do |order| %>
+  <tr>
+    <td><%= order.uid %></td>
+    <td><%= order.customer %></td>
+    <td><%= order.qty %></td>
+    <td><%= order.ship_qty %></td>
+    <td><%= order.state %></td>
+    <td><%= link_to 'Show', order %></td>
+    <td><%= link_to 'Edit', edit_order_path(order) %></td>
+    <td><%= link_to 'Destroy', order, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Order', new_order_path %>
